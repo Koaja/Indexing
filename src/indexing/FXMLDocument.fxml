@@ -39,9 +39,9 @@
                            <children>
                               <VBox alignment="CENTER" layoutX="71.0" layoutY="-10.0" prefHeight="204.0" prefWidth="308.0" style="-fx-background-image: url(&quot;images/Kitchen.jpg&quot;);" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
                                  <children>
-                                    <TextField maxWidth="90.0" promptText="Cold Water" translateY="-5.0" />
-                                    <TextField maxWidth="90.0" prefWidth="75.0" promptText="Cold Water" translateY="15.0" />
-                                    <Button mnemonicParsing="false" text="Add" translateY="40.0" />
+                                    <TextField fx:id="txtKitchenCold" maxWidth="90.0" promptText="Cold Water" translateY="-5.0" />
+                                    <TextField fx:id="txtKitchenHot" maxWidth="90.0" prefWidth="75.0" promptText="Cold Water" translateY="15.0" />
+                                    <Button fx:id="btnKitchenIndex" mnemonicParsing="false" onAction="#handleButtonAction" text="Add" translateY="40.0" />
                                  </children>
                               </VBox>
                            </children>
@@ -50,9 +50,9 @@
                            <children>
                               <VBox alignment="CENTER" layoutX="155.0" layoutY="14.0" prefHeight="204.0" prefWidth="309.0" style="-fx-background-image: url(&quot;images/Bathroom.jpg&quot;);" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
                                  <children>
-                                    <TextField maxHeight="90.0" maxWidth="90.0" promptText="Cold Water" translateY="-5.0" />
-                                    <TextField maxWidth="90.0" promptText="Hot Water" translateY="15.0" />
-                                    <Button mnemonicParsing="false" text="Add" translateY="40.0" />
+                                    <TextField fx:id="txtBathCold" maxHeight="90.0" maxWidth="90.0" promptText="Cold Water" translateY="-5.0" />
+                                    <TextField fx:id="txtBathHot" maxWidth="90.0" promptText="Hot Water" translateY="15.0" />
+                                    <Button fx:id="btnBathIndex" mnemonicParsing="false" onAction="#handleButtonAction" text="Add" translateY="40.0" />
                                  </children>
                               </VBox>
                            </children>
@@ -69,7 +69,7 @@
                         <content>
                           <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
                                  <children>
-                                    <ListView layoutX="14.0" prefHeight="438.0" prefWidth="623.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+                                    <ListView fx:id="list2014" layoutX="14.0" prefHeight="438.0" prefWidth="623.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
                                  </children>
                               </AnchorPane>
                         </content>
@@ -78,7 +78,7 @@
                         <content>
                           <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
                                  <children>
-                                    <ListView layoutX="89.0" layoutY="96.0" prefHeight="438.0" prefWidth="623.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+                                    <ListView fx:id="list2015" layoutX="89.0" layoutY="96.0" prefHeight="438.0" prefWidth="623.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
                                  </children>
                               </AnchorPane>
                         </content>
@@ -87,7 +87,7 @@
                           <content>
                             <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
                                  <children>
-                                    <ListView prefHeight="438.0" prefWidth="623.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+                                    <ListView fx:id="list2016" prefHeight="438.0" prefWidth="623.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
                                  </children>
                               </AnchorPane>
                           </content>

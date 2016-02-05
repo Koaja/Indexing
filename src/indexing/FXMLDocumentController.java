@@ -10,26 +10,46 @@ import java.util.ResourceBundle;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
-import javafx.scene.control.Label;
+import javafx.scene.control.Button;
+import javafx.scene.control.ListView;
+import javafx.scene.control.TextField;
 
 /**
  *
  * @author Balea Cristian
  */
 public class FXMLDocumentController implements Initializable {
-    
+
     @FXML
-    private Label label;
-    
+    private TextField txtKitchenCold;
     @FXML
+    private TextField txtKitchenHot;
+    @FXML
+    private TextField txtBathCold;
+    @FXML
+    private TextField txtBathHot;
+
+    @FXML
+    private ListView list2014;
+    @FXML
+    private ListView list2015;
+    @FXML
+    private ListView list2016;
+
+    @FXML
+    private Button btnKitchenIndex;
+    @FXML
+    private Button btnBathIndex;
+
+    @FXML
+
     private void handleButtonAction(ActionEvent event) {
-        System.out.println("You clicked me!");
-        label.setText("Hello World!");
+
     }
-    
+
     @Override
     public void initialize(URL url, ResourceBundle rb) {
         // TODO
-    }    
-    
+    }
+
 }
