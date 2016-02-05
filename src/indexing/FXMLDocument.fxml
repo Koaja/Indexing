@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="706.0" prefWidth="625.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="indexing.FXMLDocumentController">
+   <children>
+      <SplitPane dividerPositions="0.32954545454545453" layoutX="203.0" layoutY="167.0" orientation="VERTICAL" prefHeight="706.0" prefWidth="625.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+        <items>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
+               <children>
+                  <MenuBar layoutY="2.0" prefHeight="25.0" prefWidth="623.0">
+                    <menus>
+                      <Menu mnemonicParsing="false" text="File">
+                        <items>
+                          <MenuItem mnemonicParsing="false" text="Close" />
+                        </items>
+                      </Menu>
+                      <Menu mnemonicParsing="false" text="Edit">
+                        <items>
+                          <MenuItem mnemonicParsing="false" text="Delete" />
+                        </items>
+                      </Menu>
+                      <Menu mnemonicParsing="false" text="Help">
+                        <items>
+                          <MenuItem mnemonicParsing="false" text="About" />
+                        </items>
+                      </Menu>
+                    </menus>
+                  </MenuBar>
+                  <SplitPane dividerPositions="0.5" layoutX="-2.0" layoutY="25.0" prefHeight="206.0" prefWidth="625.0">
+                    <items>
+                      <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0">
+                           <children>
+                              <VBox alignment="CENTER" layoutX="71.0" layoutY="-10.0" prefHeight="204.0" prefWidth="308.0" style="-fx-background-image: url(&quot;images/Kitchen.jpg&quot;);" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                 <children>
+                                    <TextField maxWidth="90.0" promptText="Cold Water" translateY="-5.0" />
+                                    <TextField maxWidth="90.0" prefWidth="75.0" promptText="Cold Water" translateY="15.0" />
+                                    <Button mnemonicParsing="false" text="Add" translateY="40.0" />
+                                 </children>
+                              </VBox>
+                           </children>
+                        </AnchorPane>
+                      <AnchorPane maxHeight="204.0" maxWidth="309.0" minHeight="204.0" minWidth="309.0" prefHeight="198.0" prefWidth="345.0">
+                           <children>
+                              <VBox alignment="CENTER" layoutX="155.0" layoutY="14.0" prefHeight="204.0" prefWidth="309.0" style="-fx-background-image: url(&quot;images/Bathroom.jpg&quot;);" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                 <children>
+                                    <TextField maxHeight="90.0" maxWidth="90.0" promptText="Cold Water" translateY="-5.0" />
+                                    <TextField maxWidth="90.0" promptText="Hot Water" translateY="15.0" />
+                                    <Button mnemonicParsing="false" text="Add" translateY="40.0" />
+                                 </children>
+                              </VBox>
+                           </children>
+                        </AnchorPane>
+                    </items>
+                  </SplitPane>
+               </children>
+            </AnchorPane>
+          <AnchorPane maxHeight="469.0" maxWidth="623.0" minHeight="469.0" minWidth="623.0" prefHeight="100.0" prefWidth="160.0">
+               <children>
+                  <TabPane layoutX="14.0" layoutY="8.0" maxHeight="467.0" maxWidth="623.0" minHeight="467.0" minWidth="623.0" prefHeight="467.0" prefWidth="623.0" tabClosingPolicy="UNAVAILABLE" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                    <tabs>
+                      <Tab closable="false" text="2014">
+                        <content>
+                          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                                 <children>
+                                    <ListView layoutX="14.0" prefHeight="438.0" prefWidth="623.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+                                 </children>
+                              </AnchorPane>
+                        </content>
+                      </Tab>
+                      <Tab closable="false" text="2015">
+                        <content>
+                          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                                 <children>
+                                    <ListView layoutX="89.0" layoutY="96.0" prefHeight="438.0" prefWidth="623.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+                                 </children>
+                              </AnchorPane>
+                        </content>
+                      </Tab>
+                        <Tab closable="false" text="2016">
+                          <content>
+                            <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                                 <children>
+                                    <ListView prefHeight="438.0" prefWidth="623.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+                                 </children>
+                              </AnchorPane>
+                          </content>
+                        </Tab>
+                    </tabs>
+                  </TabPane>
+               </children>
+            </AnchorPane>
+        </items>
+      </SplitPane>
+   </children>
+</AnchorPane>
