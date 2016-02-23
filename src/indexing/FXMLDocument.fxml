@@ -33,11 +33,11 @@
                       </Menu>
                     </menus>
                   </MenuBar>
-                  <SplitPane dividerPositions="0.5" layoutX="-2.0" layoutY="25.0" prefHeight="206.0" prefWidth="625.0">
+                  <SplitPane dividerPositions="0.49919743178170145" layoutX="-2.0" layoutY="25.0" prefHeight="180.0" prefWidth="625.0" AnchorPane.bottomAnchor="32.0" AnchorPane.leftAnchor="-2.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="25.0">
                     <items>
                       <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0">
                            <children>
-                              <VBox alignment="CENTER" layoutX="71.0" layoutY="-10.0" prefHeight="204.0" prefWidth="308.0" style="-fx-background-image: url(&quot;images/Kitchen.jpg&quot;);" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                              <VBox alignment="CENTER" prefHeight="180.0" prefWidth="308.0" style="-fx-background-image: url(&quot;images/Kitchen.jpg&quot;);">
                                  <children>
                                     <TextField fx:id="txtKitchenCold" maxWidth="90.0" promptText="Cold Water" translateY="-5.0" />
                                     <TextField fx:id="txtKitchenHot" maxWidth="90.0" prefWidth="75.0" promptText="Cold Water" translateY="15.0" />
@@ -46,12 +46,12 @@
                               </VBox>
                            </children>
                         </AnchorPane>
-                      <AnchorPane maxHeight="204.0" maxWidth="309.0" minHeight="204.0" minWidth="309.0" prefHeight="198.0" prefWidth="345.0">
+                      <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0">
                            <children>
-                              <VBox alignment="CENTER" layoutX="155.0" layoutY="14.0" prefHeight="204.0" prefWidth="309.0" style="-fx-background-image: url(&quot;images/Bathroom.jpg&quot;);" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                              <VBox alignment="CENTER" prefHeight="180.0" prefWidth="309.0" style="-fx-background-image: url(&quot;images/Bathroom.jpg&quot;);">
                                  <children>
-                                    <TextField fx:id="txtBathCold" maxHeight="90.0" maxWidth="90.0" promptText="Cold Water" translateY="-5.0" />
-                                    <TextField fx:id="txtBathHot" maxWidth="90.0" promptText="Hot Water" translateY="15.0" />
+                                    <TextField fx:id="txtBathCold" maxWidth="90.0" promptText="Cold Water" translateY="-5.0" />
+                                    <TextField fx:id="txtBathHot" maxWidth="90.0" prefWidth="75.0" promptText="Cold Water" translateY="15.0" />
                                     <Button fx:id="btnBathIndex" mnemonicParsing="false" onAction="#handleButtonAction" text="Add" translateY="40.0" />
                                  </children>
                               </VBox>
@@ -59,6 +59,8 @@
                         </AnchorPane>
                     </items>
                   </SplitPane>
+                  <ComboBox fx:id="dropDownYear" layoutX="161.0" layoutY="208.0" onAction="#handleButtonAction" prefHeight="30.0" prefWidth="150.0" promptText="Select Year" visibleRowCount="5" />
+                  <ComboBox fx:id="dropDownMonth" layoutX="312.0" layoutY="208.0" onAction="#handleButtonAction" prefHeight="30.0" prefWidth="150.0" promptText="Select Month" visibleRowCount="12" />
                </children>
             </AnchorPane>
           <AnchorPane maxHeight="469.0" maxWidth="623.0" minHeight="469.0" minWidth="623.0" prefHeight="100.0" prefWidth="160.0">
@@ -69,7 +71,15 @@
                         <content>
                           <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
                                  <children>
-                                    <ListView fx:id="list2014" layoutX="14.0" prefHeight="438.0" prefWidth="623.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+                                    <TableView fx:id="table2014" layoutX="70.0" layoutY="62.0" prefHeight="440.0" prefWidth="623.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                      <columns>
+                                        <TableColumn editable="false" prefWidth="110.0" resizable="false" text="Month" />
+                                        <TableColumn prefWidth="110.0" resizable="false" text="Kitchen Cold" />
+                                          <TableColumn prefWidth="110.0" resizable="false" text="Kitchen Hot" />
+                                          <TableColumn prefWidth="110.0" resizable="false" text="Bathroom Cold" />
+                                          <TableColumn prefWidth="110.0" resizable="false" text="Bathroom Hot" />
+                                      </columns>
+                                    </TableView>
                                  </children>
                               </AnchorPane>
                         </content>
@@ -78,7 +88,15 @@
                         <content>
                           <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
                                  <children>
-                                    <ListView fx:id="list2015" layoutX="89.0" layoutY="96.0" prefHeight="438.0" prefWidth="623.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+                                    <TableView fx:id="table2015" layoutX="135.0" layoutY="62.0" prefHeight="440.0" prefWidth="623.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                       <columns>
+                                          <TableColumn editable="false" prefWidth="110.0" resizable="false" text="Month" />
+                                          <TableColumn prefWidth="110.0" resizable="false" text="Kitchen Cold" />
+                                          <TableColumn prefWidth="110.0" resizable="false" text="Kitchen Hot" />
+                                          <TableColumn prefWidth="110.0" resizable="false" text="Bathroom Cold" />
+                                          <TableColumn prefWidth="110.0" resizable="false" text="Bathroom Hot" />
+                                       </columns>
+                                    </TableView>
                                  </children>
                               </AnchorPane>
                         </content>
@@ -87,7 +105,15 @@
                           <content>
                             <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
                                  <children>
-                                    <ListView fx:id="list2016" prefHeight="438.0" prefWidth="623.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+                                    <TableView fx:id="table2016" layoutX="160.0" layoutY="26.0" prefHeight="440.0" prefWidth="623.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                       <columns>
+                                          <TableColumn editable="false" prefWidth="125.0" resizable="false" text="Month" />
+                                          <TableColumn prefWidth="125.0" resizable="false" text="Kitchen Cold" />
+                                          <TableColumn prefWidth="125.0" resizable="false" text="Kitchen Hot" />
+                                          <TableColumn prefWidth="125.0" resizable="false" text="Bathroom Cold" />
+                                          <TableColumn prefWidth="125.0" resizable="false" text="Bathroom Hot" />
+                                       </columns>
+                                    </TableView>
                                  </children>
                               </AnchorPane>
                           </content>

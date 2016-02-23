@@ -16,13 +16,14 @@ import javafx.stage.Stage;
  * @author Balea Cristian
  */
 public class Indexing extends Application {
-    
+
     @Override
     public void start(Stage stage) throws Exception {
         Parent root = FXMLLoader.load(getClass().getResource("FXMLDocument.fxml"));
-        
+
         Scene scene = new Scene(root);
-        
+        stage.setResizable(false);
+        stage.setTitle("CashKVL");
         stage.setScene(scene);
         stage.show();
     }
@@ -33,5 +34,5 @@ public class Indexing extends Application {
     public static void main(String[] args) {
         launch(args);
     }
-    
+
 }
