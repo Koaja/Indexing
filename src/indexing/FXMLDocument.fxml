@@ -73,11 +73,11 @@
                                  <children>
                                     <TableView fx:id="table2014" layoutX="70.0" layoutY="62.0" prefHeight="440.0" prefWidth="623.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
                                       <columns>
-                                        <TableColumn editable="false" prefWidth="110.0" resizable="false" text="Month" />
-                                        <TableColumn prefWidth="110.0" resizable="false" text="Kitchen Cold" />
-                                          <TableColumn prefWidth="110.0" resizable="false" text="Kitchen Hot" />
-                                          <TableColumn prefWidth="110.0" resizable="false" text="Bathroom Cold" />
-                                          <TableColumn prefWidth="110.0" resizable="false" text="Bathroom Hot" />
+                                        <TableColumn editable="false" prefWidth="125.0" resizable="false" text="Month" />
+                                        <TableColumn prefWidth="125.0" resizable="false" text="Kitchen Cold" />
+                                          <TableColumn prefWidth="125.0" resizable="false" text="Kitchen Hot" />
+                                          <TableColumn prefWidth="125.0" resizable="false" text="Bathroom Cold" />
+                                          <TableColumn prefWidth="125.0" resizable="false" text="Bathroom Hot" />
                                       </columns>
                                     </TableView>
                                  </children>
@@ -90,11 +90,11 @@
                                  <children>
                                     <TableView fx:id="table2015" layoutX="135.0" layoutY="62.0" prefHeight="440.0" prefWidth="623.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
                                        <columns>
-                                          <TableColumn editable="false" prefWidth="110.0" resizable="false" text="Month" />
-                                          <TableColumn prefWidth="110.0" resizable="false" text="Kitchen Cold" />
-                                          <TableColumn prefWidth="110.0" resizable="false" text="Kitchen Hot" />
-                                          <TableColumn prefWidth="110.0" resizable="false" text="Bathroom Cold" />
-                                          <TableColumn prefWidth="110.0" resizable="false" text="Bathroom Hot" />
+                                          <TableColumn editable="false" prefWidth="125.0" resizable="false" text="Month" />
+                                          <TableColumn prefWidth="125.0" resizable="false" text="Kitchen Cold" />
+                                          <TableColumn prefWidth="125.0" resizable="false" text="Kitchen Hot" />
+                                          <TableColumn prefWidth="125.0" resizable="false" text="Bathroom Cold" />
+                                          <TableColumn prefWidth="125.0" resizable="false" text="Bathroom Hot" />
                                        </columns>
                                     </TableView>
                                  </children>

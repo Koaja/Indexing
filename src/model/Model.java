@@ -1,8 +1,3 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package model;
 
 import java.sql.Connection;
@@ -17,15 +12,46 @@ import java.util.ArrayList;
  */
 public class Model {
 
-    private String sqlGetAllYears = "SELECT years FROM apometre";
-    private Connection conn;
+    private final String sqlGetAllYears = "SELECT * FROM indexers";
+    private final String sqlGetAllMonths = "SELECT * FROM indexers";
+    private Connection conn = mySQLConnect.ConnectDB();
 
     public ArrayList<Integer> getYears() {
         ArrayList<Integer> years = null;
+
         ResultSet rs = null;
         Statement stmt = null;
 
-     
+        try {
+            years = new ArrayList<>();
+            stmt = conn.createStatement();
+            rs = stmt.executeQuery(sqlGetAllYears);
+            while (rs.next()) {
+                years.add(Integer.parseInt(rs.getString("year")));
+            }
+        } catch (SQLException ex) {
+
+        }
+
         return years;
+    }
+
+    public ArrayList<String> getMonths() {
+        ArrayList<String> months = null;
+        ResultSet rs = null;
+        Statement stmt = null;
+
+        try {
+            months = new ArrayList<>();
+            stmt = conn.createStatement();
+            rs = stmt.executeQuery(sqlGetAllYears);
+            while (rs.next()) {
+                months.add(rs.getString("month"));
+            }
+        } catch (SQLException ex) {
+
+        }
+
+        return months;
     }
 }

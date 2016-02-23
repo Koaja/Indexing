@@ -8,6 +8,8 @@ package indexing;
 import java.net.URL;
 import java.sql.*;
 import java.util.ResourceBundle;
+import javafx.collections.FXCollections;
+import javafx.collections.ObservableList;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
@@ -16,7 +18,6 @@ import javafx.scene.control.ComboBox;
 import javafx.scene.control.TableView;
 import javafx.scene.control.TextField;
 import model.Model;
-import model.mySQLConnect;
 
 /**
  *
@@ -57,6 +58,10 @@ public class FXMLDocumentController implements Initializable {
     @FXML
     private Button btnBathIndex;
 
+    // observable lists
+    ObservableList<Integer> dropDownYears;
+    ObservableList<String> dropDownMonths;
+
     @FXML
     private void handleButtonAction(ActionEvent event) {
 
@@ -64,12 +69,12 @@ public class FXMLDocumentController implements Initializable {
 
     @Override
     public void initialize(URL url, ResourceBundle rb) {
-        
-        Connection conn = null;
+
         Model model = new Model();
-                
-        conn = mySQLConnect.ConnectDB();
-        model.getYears();
+        dropDownYears = FXCollections.observableArrayList(model.getYears());
+        dropDownMonths = FXCollections.observableArrayList(model.getMonths());
+        dropDownYear.setItems(dropDownYears);
+        dropDownMonth.setItems(dropDownMonths);
     }
 
 }
